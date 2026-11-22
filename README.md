@@ -12,4 +12,4 @@ brew install minhtri2710/tap/<formula-or-cask>
 
 | Cask | Description | Command |
 | :--- | :--- | :--- |
-| **superfan** | Control and monitor fan speed on macOS | `brew install minhtri2710/tap/superfan` |
+| **statpulse** | System, developer, port, AI agent & thermal monitor for macOS | `brew install minhtri2710/tap/statpulse` |
