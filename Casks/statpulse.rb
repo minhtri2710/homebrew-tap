@@ -1,6 +1,6 @@
 cask "statpulse" do
-  version "1.3.0"
-  sha256 "e97494cf7ba9aabec9b181926e51bd27455ec361b6d9edeef4095991df5a41f8"
+  version "1.3.1"
+  sha256 "06dfa0587744369b8633af907b19e0b19f5b87dc2a85cdadd3a7e612c8d1a2e4"
 
   url "https://github.com/minhtri2710/statpulse/releases/download/v#{version}/StatPulse_#{version}_universal.dmg"
   name "StatPulse"
@@ -13,13 +13,13 @@ cask "statpulse" do
   end
 
   app "StatPulse.app"
-  binary "#{appdir}/StatPulse.app/Contents/MacOS/superfan", target: "statpulse"
+  binary "#{appdir}/StatPulse.app/Contents/MacOS/statpulse"
 
-  uninstall quit: "com.superfan.app"
+  uninstall quit: "com.statpulse.app"
 
   zap trash: [
-    "~/Library/Application Support/com.superfan.app",
-    "~/Library/Caches/com.superfan.app",
-    "~/Library/Preferences/com.superfan.app.plist",
+    "~/Library/Application Support/com.statpulse.app",
+    "~/Library/Caches/com.statpulse.app",
+    "~/Library/Preferences/com.statpulse.app.plist",
   ]
 end
